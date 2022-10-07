@@ -20,6 +20,30 @@
             {
                 Console.WriteLine("Nevermind");
             }
+            
+            Console.WriteLine("What is your favorite programming language");
+            string userAnswer = Console.ReadLine();
+            string programmingLanguage = userAnswer.ToUpper();
+
+            switch (programmingLanguage)
+            {
+                case "C#":
+                    Console.WriteLine("You are in the right class");
+                    break;
+                case "JAVA":
+                    Console.WriteLine("The universal programming languge!!");
+                    break ;
+                case "PYTHON":
+                    Console.WriteLine("Excellent choice for a beginner");
+                    break;
+                    case "JAVASCRIPT":
+                    Console.WriteLine("Unless you know Node.JS all that JavaScript is good for is web development");
+                    break;
+                    default: 
+                    Console.WriteLine("Never heard of it");
+                    break;  
+
+            }    
         }
     }
 }
